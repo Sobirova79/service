@@ -1,0 +1,39 @@
+.login__block {
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(206, 206, 233);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.login__inputs {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding-left: 40px;
+}
+.login__title {
+  padding-left: 90px;
+}
+
+.login__name {
+  width: 300px;
+  margin-top: 15px;
+}
+.login__password {
+  width: 300px;
+}
+
+.login__button {
+  width: 300px;
+  margin-top: 60px;
+  font-size: 20px;
+  background: rgb(99, 99, 212);
+  border-radius: 15px;
+  color: black;
+  height: 40px;
+}
