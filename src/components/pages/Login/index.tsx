@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./index.module.scss";
 import { useForm } from "react-hook-form";
 import loginMutation from "../../../hooks/mutations/login";
 import { useAppDispatch, useAppSelector } from "../../../redux/utils/types";
 import { loginHandler, tokenSelector } from "../../../redux/reducers/auth";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -27,12 +29,15 @@ const Login = () => {
       { username: first_name, password },
       {
         onSuccess: (data) => {
-          console.log(data, "data");
-          dispatch(loginHandler("data"));
+          dispatch(loginHandler(data.access_token));
         },
       }
     );
   };
+
+  useEffect(() => {
+    if (!!token) navigate("/ars");
+  }, [token]);
 
   return (
     <div>

@@ -21,11 +21,6 @@ const Sidebar: FC<Props> = ({ children }) => {
       icon: "assets/images/settings.svg",
     },
     {
-      path: "/Applications",
-      name: "Заявки",
-      icon: "assets/images/file.svg",
-    },
-    {
       path: "/Brigades",
       name: "Бригады",
       icon: "assets/images/truck.svg",
@@ -44,6 +39,10 @@ const Sidebar: FC<Props> = ({ children }) => {
       path: "/role",
       name: "Роли",
       icon: "assets/images/share.svg",
+    },
+    {
+      path: "/swiper",
+      name: "Swiper",
     },
   ];
   return (

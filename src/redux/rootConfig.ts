@@ -7,7 +7,7 @@ import reducer from "./reducers/reducers";
 const persistConfig = {
   key: "apc-service-custom",
   storage,
-  whitelist: ["auth"],
+  whitelist: ["auth", "todo", "AddApp", "AddBrigades"],
 };
 
 export const store = configureStore({

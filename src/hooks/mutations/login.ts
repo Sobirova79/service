@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useMutation } from "@tanstack/react-query";
-import apiClient from "../../index";
+import { apiClient } from "../..";
 
 interface LoginTypes {
   access_token: string;

@@ -1,8 +1,15 @@
 .meeting {
   padding-top: 25px;
 }
-.meeting__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.meeting {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
+  // margin: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 20px;
 }

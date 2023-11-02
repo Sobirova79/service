@@ -7,7 +7,7 @@ const Main = () => {
       <div>
         <div className={styles.main}>Главная</div>
         <div className={styles.meeting}>
-          <div className={styles.meeting__title}>Добро пожаловать ...</div>
+          <div className={styles.meeting__title}>Добро пожаловать user</div>
           <div className={styles.meeting__role}>some role</div>
         </div>
       </div>

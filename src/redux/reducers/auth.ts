@@ -21,7 +21,7 @@ export const authReducer = createSlice({
       state.token = null;
     },
     loginHandler: (state, { payload }) => {
-      console.log(payload, "payload");
+      state.token = payload;
     },
     // permissionHandler: (state, { payload }: PayloadAction<any[]>) => {
     //   const permissions = payload.reduce((acc, number) => {
